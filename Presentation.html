@@ -1,287 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="Presentation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
-</head>
-<body> 
-    <header class="top">
-        <div class="logo">
-            <img class="image1"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\logo.png">
-        </div>
-            <ul>
-                <li><a href="Home">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Menu">Menu</a></li>
-                <li><a href="Gallery">Gallery</a></li>
-                <li><a href="Review">Review</a></li>
-                <li><a href="Order">Order</a></li>
-            </ul>
-        
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="icon1"></i> 
-            <i class="fa-solid fa-heart"id="icon1"></i>
-            <i class="fa-solid fa-cart-shopping"id="icon1"></i>
-        </div>
-    </header>
-    <div class="mid">
-        <div class="text">
-            <h1>Get fresh <span>food</span> <br> in a Easy Way</h1>
-            <p class="para1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui p ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                eu fugi at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru nt mollit anim id est laborum."
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-               </p>
-                <div class="box">
-                <button class="btn btnOrder">Order Now &nbsp;<i class="fa-solid fa-chevron-right"></i></button>
-                </div>
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Presentation.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img class="image1"
+                src="https://react-course-comfy-sloth-store.netlify.app/static/media/logo.221f6b13e6eaaad5828372464f73a1a4.svg">
         </div>
-        <div class="image">
-            <img class = "main_image"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\main_img.png">
+        <ul>
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Order</a></li>
+        </ul>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="icon1"></i>
+            <i class="fa-solid fa-heart" id="icon1"></i>
+            <i class="fa-solid fa-cart-shopping" id="icon1"></i>
         </div>
     </div>
-    <div class="aboutus">
+    <div class="mid" id="homeSection">
+        <div class="text">
+            <h1>Design Your <br />
+                Comfort Zone</h1>
+            <br />
+            <p class="para1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque
+                possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi
+                quis alias?
+            </p>
+            <div class="box">
+                <button class="btn btnOrder">Order Now &nbsp;<i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="image">
+            <img class="main_image" src="./img/header.jpeg">
+        </div>
+    </div>
+    <!-- About Section -->
+    <div class="aboutus" id="aboutSection">
         <div class="FoodPlate">
-            <img class="plateimage"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\Food-Plate.png">
+            <img class="plateimage" src="./img/about.jpeg">
         </div>
         <div class="text">
             <h1><span>About</span> us</h1>
             <h2>Why choose us?</h2>
-            <p class="para1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <p class="para1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </p>
             <button class="btn btnOrder2">Order Now</button>
         </div>
     </div>
+    <!-- End About Section -->
+
     <div class="title">
-        <h1>Our <span>Menu</span></h1>
+        <h1>Our <span>Products</span></h1>
     </div>
     <div class="Menu">
-        <div class="Menubox">
-            <img  class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\buger.jpg">
-            <h4>Burger</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\pasta.jpg">
-            <h4>Pasta</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star" id="iconstar"></i>
+
+        <div class="owl-carousel owl-theme product_list">
+
+
+            <div class="item Menubox">
+                <img class="foodimg" src="https://www.course-api.com/images/store/product-1.jpeg">
+                <h4>Burger</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
             </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\pasta.jpg">
+                <h4>Pasta</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\lasagna.webp">
+                <h4>lasagna</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chocolate_Drink.jpg">
+                <h4>Chocolate Drink</h4>
+                <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\pizza.jpg">
+                <h4>Pizza</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\Hot_dog.jpg">
+                <h4>Hot Dog</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\cake.jpg">
+                <h4>Cake</h4>
+                <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\biryani.webp">
+                <h4>Biryani</h4>
+                <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chocolate.jpg">
+                <h4>Chocolate</h4>
+                <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\ice_cream.jpg">
+                <h4>Ice cream</h4>
+                <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\spanchi.jpg">
+                <h4>Spanchi</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>
+            <div class="item Menubox">
+                <img class="foodimg"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\sandwich.jpg">
+                <h4>Sandwich</h4>
+                <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <h3>$20.00</h3>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+            </div>  
         </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\lasagna.webp">
-            <h4>lasagna</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chocolate_Drink.jpg">
-            <h4>Chocolate Drink</h4>
-            <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\pizza.jpg">
-            <h4>Pizza</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\Hot_dog.jpg">
-            <h4>Hot Dog</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\cake.jpg">
-            <h4>Cake</h4>
-            <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\biryani.webp">
-            <h4>Biryani</h4>
-            <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chocolate.jpg">
-            <h4>Chocolate</h4>
-            <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\ice_cream.jpg">
-            <h4>Ice cream</h4>
-            <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\spanchi.jpg">
-            <h4>Spanchi</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
-        <div class="Menubox">
-            <img class="foodimg" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\sandwich.jpg">
-            <h4>Sandwich</h4>
-            <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <h3>$20.00</h3>
-            <div class="icondiv">
-            <i class="fa-solid fa-star" id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-            <i class="fa-solid fa-star"id="iconstar"></i>
-        </div>
-        </div>
+
+    </div>
+
+
     </div>
     <div class="titleG">
         <h1>Our <span>Gallary</span></h1>
     </div>
     <div class="Imagelist">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_3.jpg">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_4.jpg">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_5.jpg">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_6.jpg">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_1.jpg">
-        <img  class="list" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\gallary_2.jpg">    
+        <div>
+            <img class="list" src="./img/gallery1.jpeg">
+            <img class="list" src="./img/gallery2.jpeg">
+            <img class="list" src="./img/gallery3.jpeg">
+            <img class="list" src="./img/gallery4.jpeg">
+            <img class="list" src="./img/gallery5.jpeg">
+            <img class="list" src="./img/gallery6.jpeg">
+        </div>
     </div>
     <div class="Review">
-    <div class="titleR">
-        <h1>Customer <span>Review</span></h1>
-    </div>
-    <div class="ReviewList">
-        <div class="ReviewBox">
-            <img class="Reviewers" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\review_1.png">
-            <h5>John Deo</h5>
-            <div class="icondiv">
-                <i class="fa-solid fa-star" id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-            </div>
-            <p class="para2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+        <div class="titleR">
+            <h1>Customer <span>Review</span></h1>
         </div>
-        <div class="ReviewBox">
-            <img class="Reviewers" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\review_2.png">
-            <h5>John Deo</h5>
-            <div class="icondiv">
-                <i class="fa-solid fa-star" id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
+        <div class="ReviewList">
+            <div class="ReviewBox">
+                <img class="Reviewers" src="./img/review1.jpg">
+                <h5>John Deo</h5>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+                <p class="para2"> 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, earum. Ad quo pariatur veritatis quam debitis rem rerum earum fugit tenetur non, libero molestias. Veniam!
+                </p>
             </div>
-            <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
-            
-        </div>
-        <div class="ReviewBox">
-            <img class="Reviewers" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\review_3.png">
-            <h5>John Deo</h5>
-            <div class="icondiv">
-                <i class="fa-solid fa-star" id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
+            <div class="ReviewBox">
+                <img class="Reviewers" src="./img/review3.jpg">
+                <h5>John Deo</h5>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+                <p class="para2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus natus, beatae fuga, reiciendis inventore adipisci at, deleniti architecto magnam veniam itaque nihil. A, natus necessitatibus?    
+                </p>
+
             </div>
-            <p class="para2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
-            
-            
-        </div>
-        <div class="ReviewBox">
-            <img class="Reviewers" src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\review_4.png">
-            <h5>John Deo</h5>
-            <div class="icondiv">
-                <i class="fa-solid fa-star" id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
-                <i class="fa-solid fa-star"id="iconstar"></i>
+            <div class="ReviewBox">
+                <img class="Reviewers" src="./img/review2.jpg">
+                <h5>John Deo</h5>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+                <p class="para2"> 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem neque vero, harum quos, molestiae est aliquid amet ea nobis ullam nihil minima expedita dignissimos praesentium.
+                </p>
+
+
             </div>
-            <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
-        
+            <div class="ReviewBox">
+                <img class="Reviewers" src="./img/review4.jpg">
+                <h5>John Deo</h5>
+                <div class="icondiv">
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                    <i class="fa-solid fa-star" id="iconstar"></i>
+                </div>
+                <p class="para2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam consectetur sapiente non illo quaerat incidunt enim ipsum magni, voluptatem nulla provident libero aspernatur autem.
+                </p>
+
+            </div>
         </div>
-    </div>
     </div>
     <div class="Order">
         <div class="titleO">
@@ -289,8 +367,12 @@
         </div>
         <div class="OrderBox">
             <div class="InLogo">
-                <img src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\order_image.png" class="In">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30530.75291020709!2d96.03827717431639!3d16.95761560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c197b3343efa95%3A0x269b5ed3c0a3b6eb!2sMyat%20Min%20Modern%20Furniture!5e0!3m2!1smy!2smm!4v1691986185076!5m2!1smy!2smm"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
             <div class="InputBox">
                 <div class="input1">
                     <label>Name</label>
@@ -304,23 +386,27 @@
                 <div class="input2">
                     <label>Email</label>
                     <input type="text" placeholder="  you email">
-                    <label>How Much</label>
+                    <br /><label>How Much</label>
                     <input type="number" placeholder="  how many order">
                     <label>Address</label>
                     <input type="text" placeholder="  you address">
-                </div>  
+                </div>
             </div>
         </div>
     </div>
     <div class="Ourteam">
         <div class="titleTeam">
             <h1>Our <span>Team</span></h1>
-        </div>       
+        </div>
         <div class="chefimg">
-            <div class="chef"><img class = "chef1"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef1.png"></div>
-            <div class="chef"><img class = "chef1"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef2.png"></div>
-            <div class="chef"><img class = "chef1"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef3.jpg"></div>
-            <div class="chef"><img class = "chef1"src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef4.jpg"></div>
+            <div class="chef"><img class="chef1"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef1.png"></div>
+            <div class="chef"><img class="chef1"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef2.png"></div>
+            <div class="chef"><img class="chef1"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef3.jpg"></div>
+            <div class="chef"><img class="chef1"
+                    src="C:\Users\Aung Kaung Myat\OneDrive\Documents\Yasha\Food Website\image\chef4.jpg"></div>
         </div>
     </div>
     <div class="bottom">
@@ -347,7 +433,7 @@
             <p class="bottomTag">myata5332@gmail.com</p>
             <p class="bottomTag">kunga@gmail.com</p>
         </div>
-        <div class="bottomBox" >
+        <div class="bottomBox">
             <nav>Our service</nav>
             <p class="bottomTag">Fast Delivery</p>
             <p class="bottomTag">Easy Payment</p>
@@ -358,5 +444,42 @@
             <p class="bottomTag"></p>
         </div>
     </div>
+    <div class="container">
+        <div class="text">
+            <h1>Customer Furniture <br> Build Only For You</h1>
+        </div>
+        <div class="text2">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </div>
+        <div class="Boxs">
+            <div class="box">
+                <div class="circle"></div>
+                <h2>Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+                <h2>Vision</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </div>
+            <div class="box">
+                <div class="circle"></div>
+                <h2>History</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./app.js" type="text/javascript"></script>
 </body>
+
 </html>
