@@ -1,0 +1,88 @@
+.container{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.fa-brands:hover{
+    color: rgb(164, 164, 65);
+}
+body{
+    background-color: #d0cece;
+}
+.Login{
+    margin:30px 70px;
+    font: 15px arial;
+    user-select: none;
+}
+.Color{
+    width: 60%;
+    height: 100%;
+    background:linear-gradient(45deg,#f42222,#d85454,#d07f7f);
+    border-radius: 10px 0px 0px 10px;
+}
+.inputBox{
+    width: 100%;
+    height: 100%;
+}
+.in{
+    margin-top: 30px;
+} 
+.icons{
+    margin: 30px 80px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: #f42222;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    width: 70%;
+    height: 40px;
+    margin-left:45px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f42222;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    opacity: .8;
+}
+.Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:707px;
+    
+}
+span{
+    margin-left: 45px;
+    font:15px arial;
+    user-select: none;
+}
+input{
+    margin: 12px 45px;
+    width: 70%;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+    border: 2px solid #f42222;
+    text-indent: 9%;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #f42222;
+
+}
