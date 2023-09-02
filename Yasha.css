@@ -1,68 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-color: #343a40;
+    background-color: #6d6b6b;
 }
 .container{
-    position: relative;
-    max-width: 1000px;
-    margin-top: 100px;
-}
-.hamburgerMenuContainer{
-    position: absolute;
-    left: 100%;
-}
-.tag{
-    position: absolute;
-    left: 75%;
-    margin-top: 40px;
+    width: 700px;
     height: 500px;
-    width: 100px;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-a{
-    color: white;
-    text-decoration: none;
-    font-size:20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px 400px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.hamburgerContainer{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+}
+.line{
+    width: 100%;
+    height:5px;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: all .2s ease;
+}
+.showItems{
+    width:92%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: all .5s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+ul{
+    font: 20px arial;
+    list-style: none;
+    position: absolute;
     top: 50px;
-    line-height: 50px;
-    margin-left: 30%;
-    margin-top: 60%;
+    right:150px;
 }
-a:hover{
-    color: skyblue;
+li{
+    margin-bottom: 20px;
 }
-.changeA{
-   opacity: .8;
-   position: absolute;
-   background-color: #3b4046;
-   position: absolute;
-   left: 500px;
-   width: 500px;
-   height: 500px; 
-   border-radius: 20px;
+
+.ItemCH{
+    opacity: 1;
 }
-.hamburger{
-    width: 40px;
-    height: 4px;
-    background-color: #cdedf6;
-    border-radius: 5px;
-    margin: 5px 0px;
-    cursor: pointer;
+.line2CH{
+    opacity: 0;
 }
-.line2{
-    transition: opacity .5s ease;
+.line1CH{
+    transform: rotate(45deg) translate(12px,9px);
+
 }
-.chgline2{
-    opacity:0;
-}
-.line1,.line3{
-    transition: transform .5s ease-in;
-}
-.chgline1{
-    transform: rotate(35deg) translate(4px,9px);
-}
-.chgline3{
-    transform: rotate(-35deg) translate(4px,-9px);
+.line3CH{
+    transform: rotate(-45deg) translate(12px,-9px);
 }
