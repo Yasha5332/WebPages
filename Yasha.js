@@ -1,23 +1,21 @@
-const ham = document.querySelector(".hamburger");
-const menu = document.querySelector(".hamburgerMenuContainer");
-const line1 = document.querySelector(".line1");
-const line2 = document.querySelector(".line2");
-const line3 = document.querySelector(".line3");
-const tag = document.querySelector(".tag");
-menu.addEventListener("click",()=>{
-    if(menu.classList.contains("IsOpened"))
-    {
-        line2.classList.remove("chgline2"); 
-        line1.classList.remove("chgline1");
-        line3.classList.remove("chgline3");
-        tag.classList.remove("changeA");
-        menu.classList.remove("IsOpened");
+const btnTag = document.querySelector(".hamburgerContainer");
+const line1Tag = document.querySelector(".line1");
+const line2Tag = document.querySelector(".line2");
+const line3Tag = document.querySelector(".line3");
+const Item = document.querySelector(".showItems");
+btnTag.addEventListener("click",()=>{
+    if(btnTag.classList.contains("RE")){
+        line2Tag.classList.remove("line2CH");
+        line1Tag.classList.remove("line1CH");
+        line3Tag.classList.remove("line3CH");
+        Item.classList.remove("ItemCH");
+        btnTag.classList.remove("RE");
+
+    }else{
+    line2Tag.classList.add("line2CH");
+    line1Tag.classList.add("line1CH");
+    line3Tag.classList.add("line3CH");
+    Item.classList.add("ItemCH");
+    btnTag.classList.add("RE");
     }
-    else{       
-        line2.classList.add("chgline2"); 
-        line1.classList.add("chgline1");
-        line3.classList.add("chgline3");
-        tag.classList.add("changeA");
-        menu.classList.add("IsOpened");
-    }
-});
+})
