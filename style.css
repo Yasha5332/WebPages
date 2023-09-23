@@ -1,88 +1,182 @@
-.container{
-    width: 500px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px grey;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.fa-brands:hover{
-    color: rgb(164, 164, 65);
-}
+
 body{
-    background-color: #d0cece;
+    font-family: "Jost", sans-serif;
 }
-.Login{
-    margin:30px 70px;
-    font: 15px arial;
-    user-select: none;
-}
-.Color{
-    width: 60%;
-    height: 100%;
-    background:linear-gradient(45deg,#f42222,#d85454,#d07f7f);
-    border-radius: 10px 0px 0px 10px;
-}
-.inputBox{
-    width: 100%;
-    height: 100%;
-}
-.in{
-    margin-top: 30px;
-} 
-.icons{
-    margin: 30px 80px;
-    font-size: 25px;
+.navbar{
     display: flex;
     justify-content: space-around;
-    color: #f42222;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
-
-*{
-    padding: 0;
-    margin: 0;
+ul{
+    list-style: none;
 }
-button{
-    width: 70%;
-    height: 40px;
-    margin-left:45px;
-    font-size: 17px;
-    border-radius: 10px;
-    border: none;
-    background-color: #f42222;
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+.logo{
+    margin: 25px 0;
 }
-button:hover{
-    opacity: .8;
-}
-.Box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:707px;
-    
-}
-span{
-    margin-left: 45px;
-    font:15px arial;
-    user-select: none;
-}
-input{
-    margin: 12px 45px;
-    width: 70%;
-    height: 30px;
-    border-radius: 6px;
-    font-size: 17px;
-    border: none;
-    border: 2px solid #f42222;
-    text-indent: 9%;
-    background-color: transparent;
+li{
+    display: inline-block;
+    margin: 30px 20px;
 }
 a{
     text-decoration: none;
-    color: #f42222;
+    color: #fff;
+    font-size:16px ;
+    letter-spacing: 1px;
+}
+.getStarted{
+    background-color:#37517e;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    padding: 200px 0;
+}
+.logoGp{
+    width: 100%;
+    height: 100px;
+    background-color: #dee2e6;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+.btnGetStarted{
+    background-color: transparent;
+    border: 2px skyblue solid;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+.LogoText{
+    font-size:29px ;
+    color: white;
+    letter-spacing: 2px;
 
+}
+.img1{
+    width:550px;
+    height:450px;
+}
+.titleTag{
+    color: white;
+    font-size: 45px;
+    line-height: 60px;
+}
+.GetStxt{
+    color: #ffffffbe;
+    font-size: 20px;
+}
+.txt1{
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.btn{
+    width: 140px;
+    height: 45px;
+    font-size: 17px;
+    margin-right: 20px;
+}
+.btnStart{
+    background-color: rgb(55, 168, 213);
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px;
+}
+.Watch{
+    background-color:transparent;
+    border: none;
+    color: #FFF;
+}
+.btnBox{
+    margin-top: 55px;
+}
+.fa-solid{
+    margin-right: 10px;
+    background-color: #37517e;
+    padding: 5px;
+}
+
+.clients{
+    width: 100px;
+    height: 40px;
+}
+.AboutUs{
+    margin-top: 100px;
+}
+.AboutUstxt{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+.AboutUstxt ::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: gray;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.AboutUstxt::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: gray;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.P{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 90px;
+    color: #464748;
+}
+.leftP p{
+   text-align: justify;
+   margin-bottom: 16px;
+   font-size: 17px;
+   line-height: 30px;
+}
+.leftP{
+    width: 120rem;
+    padding: 20px;
+}
+.rightP{
+    padding: 20px;
+    line-height: 28px;
+}
+.btnLearnMore{
+    width: 150px;
+    height: 50px;
+    border: 2px rgb(66, 184, 231) solid;
+    background-color: transparent;
+    font-size: 17px;
+    color: rgb(66, 184, 231);
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: all .2s ease-in;
+}
+.btnLearnMore:hover{
+    background-color:rgb(66, 184, 231) ;
+    color: #fff;
 }
