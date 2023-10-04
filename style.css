@@ -1,182 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.form-control{
+    width: 400px;
+    height: 30px;
+    border-bottom-left-radius:0 ;
+    border-bottom-right-radius:0 ;
 }
-
-
-body{
-    font-family: "Jost", sans-serif;
-}
-.navbar{
+.ProductContainer{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    position: fixed;
-    right: 0;
-    left: 0;
-}
-ul{
-    list-style: none;
-}
-.logo{
-    margin: 25px 0;
-}
-li{
-    display: inline-block;
-    margin: 30px 20px;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size:16px ;
-    letter-spacing: 1px;
-}
-.getStarted{
-    background-color:#37517e;
-    width: 100%;
-    height: 650px;
-    display: flex;
-    justify-content: space-around;
-    padding: 200px 0;
-}
-.logoGp{
-    width: 100%;
+    width: 400px;
     height: 100px;
-    background-color: #dee2e6;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0;
+    background-color: #fff;
 }
-.btnGetStarted{
-    background-color: transparent;
-    border: 2px skyblue solid;
-    border-radius: 20px;
-    height: 40px;
-    width: 120px;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 10px;
+.titleBox{
+    width: 50%;
+    height: 100%;
 }
-.LogoText{
-    font-size:29px ;
-    color: white;
-    letter-spacing: 2px;
-
-}
-.img1{
-    width:550px;
-    height:450px;
-}
-.titleTag{
-    color: white;
-    font-size: 45px;
-    line-height: 60px;
-}
-.GetStxt{
-    color: #ffffffbe;
-    font-size: 20px;
-}
-.txt1{
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-.btn{
-    width: 140px;
-    height: 45px;
-    font-size: 17px;
-    margin-right: 20px;
-}
-.btnStart{
-    background-color: rgb(55, 168, 213);
-    color: #fff;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 50px;
-}
-.Watch{
-    background-color:transparent;
-    border: none;
-    color: #FFF;
-}
-.btnBox{
-    margin-top: 55px;
-}
-.fa-solid{
-    margin-right: 10px;
-    background-color: #37517e;
-    padding: 5px;
-}
-
-.clients{
-    width: 100px;
-    height: 40px;
-}
-.AboutUs{
-    margin-top: 100px;
-}
-.AboutUstxt{
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #37517e;
-}
-.AboutUstxt ::before{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: gray;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
-.AboutUstxt::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: gray;
-    bottom: 0;
-    left: calc(50% - 20px);
-}
-.P{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px 90px;
-    color: #464748;
-}
-.leftP p{
-   text-align: justify;
-   margin-bottom: 16px;
-   font-size: 17px;
-   line-height: 30px;
-}
-.leftP{
-    width: 120rem;
-    padding: 20px;
-}
-.rightP{
-    padding: 20px;
-    line-height: 28px;
-}
-.btnLearnMore{
-    width: 150px;
+.Image{
+    width: 50px;
     height: 50px;
-    border: 2px rgb(66, 184, 231) solid;
-    background-color: transparent;
-    font-size: 17px;
-    color: rgb(66, 184, 231);
-    border-radius: 5px;
-    margin: 30px 0;
-    transition: all .2s ease-in;
 }
-.btnLearnMore:hover{
-    background-color:rgb(66, 184, 231) ;
-    color: #fff;
+body{
+    background-color: #1e293b;
+}
+.inputBox{
+    width: 100%;
+    height: 90%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.resultContainer{
+    width: 400px;
+    height: 300px;
+    
 }
