@@ -1,410 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Tinos&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100&family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: black;
+  background-color: #334155;
+  font-family:'Poppins' ;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
+.container{
+    width: 100% ;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 10px;
+.container .text{
+    font-size: 30px;
+    margin: 5px;
 }
 
-/* For Nav */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  z-index: 1000;
-  background-color: black;
+.sec-text{
+    position: relative;
 }
 
-.logoContainer i {
-  color: #fff;
-  font-size: 22px;
-  position: relative;
-  top: -33px;
-  left: 20px;
+.sec-text::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 4px solid blue;
+    background-color: #334155;
+    animation: MoveLeft 4s steps(12) infinite;
 }
 
-.logoContainer img {
-  width: 160px;
-  height: 80px;
+@keyframes MoveLeft {
+  0%,40%,60%{
+    left: 0;
+    right: 0;
+  }
+  80%,100%{
+    left: 100%;
+    right: 100%;
+  }
 }
-
-.searchBox {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.searchBox input {
-  width: 450px;
-  height: 35px;
-  background-color: #121212;
-  border: 1px solid rgb(51, 51, 51);
-  border-radius: 50px 0 0 50px;
-  text-indent: 20px;
-  font-size: 15px;
-  outline: none;
-}
-
-.searchBox input:active {
-  border-radius: 2px solid blue;
-}
-
-.searchBox button {
-  background-color: #222222;
-  color: #fff;
-  width: 70px;
-  height: 37px;
-  border: 1px solid rgb(51, 51, 51);
-  position: relative;
-  left: -5px;
-  border-radius: 0 50px 50px 0;
-}
-
-.searchBox button i {
-  font-size: 17px;
-}
-
-.searchBox .voice {
-  border-radius: 50%;
-  height: 37px;
-  width: 37px;
-  margin: 0 10px;
-}
-
-.LoginContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.LoginContainer i {
-  font-size: 20px;
-  color: #fff;
-  margin: 0 15px;
-}
-
-.Small-container {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 50px;
-}
-
-.Small-container button {
-  width: 80px;
-  height: 35px;
-  border-radius: 20px;
-  background-color: transparent;
-  color: lightblue;
-  border: 1px solid blue;
-  font-family: "Poppins";
-  position: relative;
-  top: -5px;
-}
-
-/*Nav End*/
-
-/* SideBar Start */
-
-.SideBar {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: black;
-  z-index:1000;
-}
-
-.SideBar .Home {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 180px;
-  height: 40px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin: 0px 30px;
-  transition: all 0.1s ease;
-}
-
-.SideBar .Home:hover {
-  background-color: #272727;
-}
-
-.SideBar .Home:nth-child(1) {
-  background-color: #272727;
-}
-
-.SideBar .Home i {
-  margin-right: 20px;
-  color: white;
-}
-.SideBar .Home h3 {
-  color: white;
-  font-family: "Roboto";
-  font-size: 15px;
-}
-
-.SideBar .Home:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  top: 160px;
-  left: 15px;
-  width: 90%;
-  height: 2px;
-  background-color: rgb(51, 51, 51);
-}
-
-.SideBar .Home:nth-child(4) {
-  margin-top: 30px;
-}
-
-.SideBar .Home:nth-child(6)::after {
-  content: "";
-  position: absolute;
-  top: 350px;
-  left: 15px;
-  width: 90%;
-  height: 2px;
-  background-color: rgb(51, 51, 51);
-}
-
-.LabelSub {
-  font-size: 16px;
-  color: #fff;
-  font-family: "Poppins";
-  position: relative;
-  top: 35px;
-  left: 30px;
-}
-
-.Show-More {
-  position: relative;
-}
-.Show-More::after {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: -17px;
-  width: 120%;
-  height: 2px;
-  background-color: rgb(51, 51, 51);
-}
-
-.para {
-  margin: 50px 35px;
-}
-
-.para p {
-  color: #fff;
-  font-family: "Poppins";
-  font-size: 15px;
-}
-
-/* Side Bar end*/
-
-/*Box Start*/
-.BoxName {
-  position: fixed;
-  top: 80px;
-  left: 278px;
-  width: 80%;
-  height: 45px;
-  display: flex;
-  justify-content: flex-start;
-  background-color: black;
-  z-index: 1000;
-}
-
-.Box {
-  background-color: #272727;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  font-family: "Poppins";
-  color: #fff;
-  font-weight: bold;
-  font-size: 13px;
-  margin-right:10px ;
-  user-select: none;
-  transition: all .1s ease;
-  height: 35px;
-}
-
-.Box:hover{
-    background-color: #484747;
-}
-
-.Box:nth-child(1){
-    color: black;
-    background-color: #fff;
-}
-
-.Box:nth-child(2){
-    width: 75px;
-}
-
-.Box:nth-child(3){
-    width: 60px;
-}
-/*Box End*/
-
-
-
-/* Youtube  Card */
-.Youtube_Card{
-  margin: 10% 18%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 10px;
-}
-
-.Card{
-  width: 400px;
-  height: 320px;
-}
-
-.Card img{
-  width: 400px;
-  height: 220px;
-  border-radius:10px ;
-}
-
-.Card .Circle{
-  width: 40px;
-  height: 40px;
-  background-color: skyblue;
-  border-radius: 50%;
-}
-
-.Card .title{
-  display: grid;
-  grid-template-columns: 50px 1fr;
-}
-
-.title h4{
-  font-family: "Roboto";
-  font-size: 16px;
-  color: #fff;
-}
-
-
-.Channel{
-  color: gray;
-  font-family: 'Poppins';
-  margin: 0 50px;
-}
-
-.Channel h4{
-  font-size: 13px;
-}
-/* Youtube  Card */
-
-
-
-/* Youtube Short */
-
-.Youtube_Short{
-  margin: -120px 290px;
-  width: 30vw;
-  height: 50px;
-  font-size: 20px;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.Youtube_Short i{
-  color: red;
-  margin-right: 10px;
-}
-
-.Card-Short{
-  margin-top:150px ;
-  margin-left:280px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  gap:13px;
-}
-
-.Card-Short  img{
-  width: 100%;
-  height: 400px;
-}
-
-.Short{
-  width: 230px;
-  border-radius:10px ;
-}
-/* Youtube Short */
-
-
-
-/*Show More Btn*/
-
-.Show_MoreBox{
-  margin: 30px 250px;
-  display: flex;
-  justify-content: center;
-  width: 83%;
-  position: relative;
-}
-
-.Show_MoreBtn{
-  width: 350px;
-  height: 40px;
-  border-radius:20px ;
-  color: #fff;
-  font-family: "Poppins";
-  border: 1px solid #484747;
-  background-color: black;
-  transition: all .1s ease;
-}
-
-.Show_MoreBtn:hover{
-  background-color: #484747;
-}
-
-.Show_MoreBtn::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  background-color: #484747;
-  width: 430px;
-  height: 1px;
-}
-
-.Show_MoreBtn::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background-color: #484747;
-  width: 430px;
-  height: 1px;
-}
-
-.Show_MoreBtn i{
-  margin-left: 10px;
-}
-/*Show More Btn*/
